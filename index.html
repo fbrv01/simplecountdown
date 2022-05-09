@@ -1,4 +1,4 @@
-<!-- Countdow to our reunion :) -->
+    // Hello M. this is a VERY simple countdow to our reunion :)
 
 <!DOCTYPE HTML>
 <html>
@@ -27,7 +27,7 @@ p1 {
     <p id="secs"></p>
     <h2 id="end"></h2>
     <script>
-    // The data/time we want to countdown to
+    // The data/time we want to countdown to - put Your date here
     var countDownDate = new Date("June 11, 2022 20:00:00").getTime();
 
     // Run myfunc every second
@@ -36,17 +36,17 @@ p1 {
     var now = new Date().getTime();
     var timeleft = countDownDate - now;
         
-    // Calculating the days, hours, minutes and seconds left
+    // Calculating the days, hours, minutes and seconds left to set date
     var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
     var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
         
-    // Result is output to the specific element
-    document.getElementById("days").innerHTML = days + "dni "
-    document.getElementById("hours").innerHTML = hours + "godzin " 
-    document.getElementById("mins").innerHTML = minutes + "min " 
-    document.getElementById("secs").innerHTML = seconds + "sek " 
+    // Results are output to the specific elements. Edit "dni" with "days" or word in Your language, do the same for all other elements.
+    document.getElementById("days").innerHTML = days + " dni"
+    document.getElementById("hours").innerHTML = hours + " godzin" 
+    document.getElementById("mins").innerHTML = minutes + " min" 
+    document.getElementById("secs").innerHTML = seconds + " sek" 
         
     // Display the message when countdown is over
     if (timeleft < 0) {
